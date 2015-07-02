@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	color:#FFF;
+}
+	#wraper{
+		width:350px;
+		height: 300px;
+		border:5px solid #000;	
+		margin:auto;
+		padding:0px;
+		perspective:450px; /* main wraper perspective*/
+		perspective-origin:50% 50%; /* from top 50%, from bottom 50%*/
+		background-image:url(train1.jpg);
+		background-repeat:no-repeat;
+		background-size:cover
+	
+	}
+	#one{
+		width:300px;
+		height: 250px;
+		margin:0px auto;
+		box-shadow:0px 0px 5px 2px #CC0000;
+		background-color:blue;
+		opacity:0.7;	
+		padding: 5px;
+		border:2px solid #000;
+		transition:0.6s;
+		transform:rotateY(90deg);
+		transform-origin:0%; /* left 0%, right 50%*/
+		opacity:0;
+		color:#FFF;
+	}
+	#wraper:hover #one{
+		transform:rotateY(0deg);
+		opacity:1;
+	}
